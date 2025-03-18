@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!--** The viewport meta tag must be present in fluid emails **-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<!-- Below are embedded styles that should be included in every email (everything before the media query) -->
+
+<style type="text/css">
+html {
+	-webkit-text-size-adjust:none;
+	-ms-text-size-adjust:none;
+}
+body {
+	background-color: #ffffff;
+	margin:0px;
+}
+
+/* Styles to fix display issues in yahoo and hotmail webmail
+------------------------------------------------------------------------------------------*/
+.blueLinks a {color:#666666; text-decoration: none;}
+.yshortcuts {border-bottom: none;}
+.ReadMsgBody { width: 100%; }
+.ExternalClass{ width: 100%; }
+
+/*--------------------------------
+End of mandatory embedded styles
+---------------------------------*/
+
+
+/* Begin the media query. Only use ID's for fluid divs.
+------------------------------------------------------------------------------------------*/
+@media (max-width:480px) {
+	body {
+	  -webkit-text-size-adjust:100% !important; 
+	  -ms-text-size-adjust:100% !important;
+   	}
+   	
+/* Controls table resizing and hidden elements upon optimization. These are standard classes
+for fluid emails. Use these in every fluid email.
+------------------------------------------------------------------------------------------*/
+*[class].wrap {
+	width:100% !important;
+}
+*[class].hide {
+	display:none !important;
+	width:0 !important;
+}
+*[class].appleLinks a {
+	color:#808080 !important;
+	text-decoration:none !important;
+}
+*[class].center_img {
+	text-align:center !important;
+}
+
+/* fluid content part
+------------------------------------------------------------------------------------------*/
+*[id]#fluid-globe {
+	width: 26px !important;
+	height: 25px !important;
+	background-image:url(images/i3046-global-26x25.gif) !important;
+	display:block !important;
+	position:relative !important;
+	background-repeat:no-repeat !important;
+	padding-right:10px !important;
+}
+*[class].globe-link {
+	position: absolute !important; 
+	top: 0px !important; 
+	left: 0px !important; 
+	width: 26px !important; 
+	height: 25px !important;  
+	background-color: transparent !important;
+}
+*[id]#fluid-hdr {
+	width: 274px !important;
+	height: 147px !important;
+	background-image:url(images/i3046-fluid-header-aal-274x147.gif) !important;
+	display:block !important;
+	position:relative !important;
+	background-repeat:no-repeat !important;
+	margin: 5px 0px !important;
+}
+*[class].fluid_shopthesavings_link {
+	position: absolute !important; 
+	top: 95px !important; 
+	left: 42px !important; 
+	width: 200px !important; 
+	height: 36px !important;  
+	background-color: transparent !important;
+}
+
+/* Bottom menu item CSS image maps- gray menus
+------------------------------------------------------------------------------------------*/
+*[id]#fluid_menu {
+	width:281px !important;
+	height:194px !important;
+	position: relative !important;
+	background-image:url(images/i3046-fluid-menu-281x194.gif) !important;
+	display:block !important;	
+	background-repeat:no-repeat !important;
+}
+  *[class].fluid_menu_smtPhone {
+	position: absolute !important; 
+	top: 0px !important; 
+	left: 0px !important; 
+	width: 278px !important; 
+	height: 32px !important;
+	background-color: transparent !important;
+  }
+  *[class].fluid_menu_tablets {
+	position: absolute !important; 
+	top: 40px !important; 
+	left: 0px !important; 
+	width: 278px !important; 
+	height: 32px !important;
+	background-color: transparent !important;
+  }
+  *[class].fluid_menu_qmp {
+	position: absolute !important; 
+	top: 80px !important; 
+	left: 0px !important; 
+	width: 278px !important; 
+	height: 32px !important;
+	background-color: transparent !important;
+  }
+  *[class].fluid_menu_BasicPhone {
+	position: absolute !important; 
+	top: 120px !important; 
+	left: 0px !important; 
+	width: 278px !important; 
+	height: 32px !important;
+	background-color: transparent !important;
+  }
+  *[class].fluid_menu_myatt {
+	position: absolute !important; 
+	top: 160px !important; 
+	left: 0px !important; 
+	width: 278px !important; 
+	height: 32px !important;
+	background-color: transparent !important;
+  }
+
+
+/* Below is the closing bracket for the media query. Do not delete!
+------------------------------------------------------------------------------------------*/
+}
+
+</style>
+</head>
+
+<body>
+<!--this is pre-header section-->
+<table class="wrap" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#ffffff" width="85%" align="left" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#808080; padding:10px 5px 10px 10px;">
+      Hey &lt;Elizabeth&gt; &mdash; <a href="http://%%track%%/apreheadd" style="color:#067ab4;" target="_blank">shop online</a> and add a line today!
+    </td>
+    <td bgcolor="#ffffff" align="right" valign="middle">
+      <div id="fluid-globe" style="background-image:url(images/i3046-fluid-header-274x133.gif); width:0; height:0; display:block;border:none;"><a class="globe-link" href="http://%%track%%/aglobe"></a></div>
+    </td>
+  </tr>
+</table>
+
+<!--this is hero section-->
+<table class="wrap" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="hide" bgcolor="#ffffff" align="center" valign="middle">
+      <img src="images/i3046-head-aal-580x191.jpg" alt="Smartphones. Tablets. Free Shipping. Click to find our best deals online." width="580" height="191" border="0" usemap="#Map2" />
+    </td>
+    <!--This is fluid header-->
+    <td bgcolor="#ffffff" align="center" valign="middle">
+      <div id="fluid-hdr" style="background-image:url(images/i3046-fluid-header-aal-274x147.gif); width:0; height:0; display:block;border:none;">
+        <a class="fluid_shopthesavings_link" href="http://%%track%%/atpshopbtf"></a>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!--this is 4 device deals section-->
+<table class="wrap" width="600" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr>
+    <td bgcolor="#ffffff" valign="middle">
+      <table class="wrap" width="300" border="0" cellpadding="0" cellspacing="0" align="left" style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;">
+        <tr>
+          <td class="center_img" bgcolor="#ffffff" valign="middle" align="left" style="padding:5px 0px;mso-border-right-alt:solid #ffffff .5pt; border-collapse:collapse;">
+            <img src="images/i3046-lenovo-294x218.jpg" alt="Lenovo IdeaTab. Now $99.99." width="294" height="218" border="0" usemap="#Map" />
+          </td>
+        </tr>
+      </table>
+      <table class="wrap" width="300" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="center_img" bgcolor="#ffffff" valign="middle" align="right" style="padding:5px 0px;">
+            <img src="images/i3046-pantech-294x218.jpg" alt="Pantech Flex. FREE." width="294" height="218" border="0" usemap="#Map3" />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#ffffff" valign="middle">      
+      <table class="wrap" width="300" border="0" cellpadding="0" cellspacing="0" align="left" style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;">
+        <tr>
+          <td class="center_img" bgcolor="#ffffff" valign="middle" align="left" style="padding:5px 0px;mso-border-right-alt:solid #ffffff .5pt; border-collapse:collapse;">
+            <img src="images/i3046-htc-294x218.jpg" alt="HTC One VX. Now 99-cents." width="294" height="218" border="0" usemap="#Map4" />
+          </td>
+        </tr>
+      </table>
+      <table class="wrap" width="300" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="center_img" bgcolor="#ffffff" valign="middle" align="right" style="padding:5px 0px;">
+            <img src="images/i3046-sharp-294x218.jpg" alt="Sharp FX Plus. FREE." width="294" height="218" border="0" usemap="#Map5" />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--this is footer/menu bar-->
+<table class="wrap" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr><td bgcolor="#ffffff" align="center" valign="middle" colspan="5">&nbsp;</td></tr>
+  <tr class="hide">
+    <td bgcolor="#ffffff" align="center" valign="top" width="107"><a href="http://%%track%%/asmartbtn" target="_blank"><img src="images/i3046-menu-smtPhone-107x37.gif" width="107" height="37" border="0" alt="Smartphones" style="display:block;" /></a></td>
+    <td bgcolor="#ffffff"  align="center" valign="top" width="107"><a href="http://%%track%%/atabletbtn" target="_blank"><img src="images/i3046-menu-tablets-107x37.gif" width="107" height="37" border="0" alt="Tablets" style="display:block; " /></a></td>
+    <td bgcolor="#ffffff"  align="center" valign="top" width="107"><a href="http://%%track%%/aqmpbtn" target="_blank"><img src="images/i3046-menu-qmp-107x37.gif" width="107" height="37" border="0" alt="Quick Messaging Phone" style="display:block; " /></a></td>
+    <td bgcolor="#ffffff"  align="center" valign="top" width="107"><a href="http://%%track%%/abasicbtn" target="_blank"><img src="images/i3046-menu-bPhone-107x37.gif" width="107" height="37" border="0" alt="Basic Phones" style="display:block;" /></a></td>
+    <td bgcolor="#ffffff"  align="center" valign="top" width="107"><a href="http://%%track%%/amyatt" target="_blank"><img src="images/i3046-menu-myatt-107x37.gif" width="107" height="37" border="0" alt="myAT&T" style="display:block; " /></a></td>
+  </tr>
+  <tr>
+    <td bgcolor="#ffffff"  align="center" valign="middle" colspan="6">
+      <!--This is fluid footer/menue-->
+      <div id="fluid_menu" style="background-image:url(images/i3046-fluid-menu-281x194.gif); width:0; height:0; display:block; padding:15px 0 0 0">
+        <a class="fluid_menu_smtPhone" href="http://%%track%%/asmartbtn"></a>
+        <a class="fluid_menu_tablets" href="http://%%track%%/atabletbtn"></a>
+        <a class="fluid_menu_qmp" href="http://%%track%%/aqmpbtn"></a>
+        <a class="fluid_menu_BasicPhone" href="http://%%track%%/abasicbtn"></a>
+        <a class="fluid_menu_myatt" href="http://%%track%%/amyatt"></a>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<table class="wrap" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#ffffff" align="left" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#808080; padding:10px 10px 0px 10px;">
+       <a href="http://%%track%%/astoreloc" style="color:#067ab4; text-decoration:none;" target="_blank">store locator</a> | <a href="http://%%track%%/aacssries" style="color:#067ab4; text-decoration:none;" target="_blank">accessories</a> | <a href="http://%%track%%/aringapp" style="color:#067ab4; text-decoration:none;" target="_blank">ringtones &amp; apps</a>
+    </td>
+  </tr>
+  <tr><td bgcolor="#ffffff" align="left" valign="middle" style="padding:3px 10px;"><img src="images/i3046-border-223x1.gif" width="223" height="1" border="0" alt="border" style="display:block; " /></td></tr>
+  <tr>
+    <td bgcolor="#ffffff" align="left" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#808080; padding-left:10px;">
+      <a href="http://%%track%%/acontus" style="color:#067ab4; text-decoration:none;" target="_blank">contact us</a> | <a href="http://%%track%%/aprivacy" style="color:#067ab4; text-decoration:none;" target="_blank">privacy policy</a>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#ffffff" align="left" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#808080; padding:10px;">
+      This email was sent to: %%email%% <br />
+      <br />
+      This is an AT&amp;T promotional email.<br />
+      <br />
+      If you do not wish to receive future email offers from AT&amp;T containing information about products and services we think you will be interested in, <a href="http://%%track%%/aunsub" style="color:#067ab4;" target="_blank">click here</a> to unsubscribe. <br />
+      <br />
+      <b>Tablet:</b> Price eff. 2/15/13. Req. new 2-yr. agm.t w/qual. data or Mobile Share plan. $100 off new tablet non-commit price. Subject to change. Restr. apply.<br />
+      <br />
+      <b>Smartphone:</b> New 2-yr agmt with qualifying voice &amp; data plans or Mobile Share plan req'd.<br />
+      <br />
+      <b>Early Termination Fee</b> (<a href="http://%%track%%/aETFlegal" style="color:#067ab4;" target="_blank">att.com/equipmentETF</a>): After 14 days, ETF up to $325. <b>Restocking fee</b> up to $35, and up to 10% of sales price for tablets. <b>Other Monthly Charges/Line</b>: May include a Regulatory Cost Recovery Charge (up to $1.25), a gross receipts surcharge, federal and state universal svc charges, an Administrative Fee and other gov't assessments. These are not taxes or gov't req'd charges. Visit a store or <a href="http://%%track%%/awlslegal" style="color:#067ab4;" target="_blank">att.com/wireless</a> to learn more about wireless devices and services from AT&amp;T.<br />
+      <br />
+      Android is a trademark of Google Inc. Use of this trademark is subject to Google Permissions.<br />
+      <br />
+      Microsoft Windows Phone and the Windows logo are trademarks of the Microsoft group of companies.<br />
+      <br />
+      Screen images simulated.<br />
+      <br />
+      &copy;2013 AT&amp;T Intellectual Property. All rights reserved. AT&amp;T and the AT&amp;T logo are trademarks of AT&amp;T Intellectual Property. All other marks contained herein are the property of their respective owners.<br />
+      <br />
+      <span class="appleLinks">AT&amp;T, 1055 Lenox Park Boulevard, Atlanta, GA 30319</span><br />
+      <br />
+      Reference Code: A170318
+    </td>
+  </tr>
+</table>
+
+<map name="Map" id="Map">
+  <area shape="poly" coords="174,122,176,14,280,13,280,194,185,194,171,190,160,183,152,171,150,156,154,139,160,131,168,125" href="http://%%track%%/alenovoimg" target="_blank" />
+  <area shape="rect" coords="9,115,113,130" href="http://%%track%%/alenovotxt" target="_blank" />
+  <area shape="rect" coords="10,148,125,182" href="http://%%track%%/alenovolrn" target="_blank" />
+</map>
+
+<map name="Map2" id="Map2">
+  <area shape="circle" coords="561,17,18" href="http://%%track%%/aglobe" />
+  <area shape="rect" coords="2,131,204,172" href="http://%%track%%/atpshopbtd" />
+  <area shape="poly" coords="334,188,334,49,405,49,406,4,505,5,505,51,546,51,547,189" href="http://%%track%%/adevicebtn" />
+</map>
+
+<map name="Map3" id="Map3">
+  <area shape="poly" coords="46,28,46,13,136,13,138,199,47,197,46,82,34,85,21,81,13,74,7,63,6,50,11,39,21,30,34,28" href="http://%%track%%/afleximg" />
+  <area shape="rect" coords="153,120,251,138" href="http://%%track%%/aflextxt" />
+  <area shape="rect" coords="153,151,269,186" href="http://%%track%%/aflexlrn" />
+</map>
+
+<map name="Map4" id="Map4">
+  <area shape="poly" coords="189,12,281,12,282,201,192,201,190,194,178,192,164,182,156,169,157,147,164,132,177,124,190,120" href="http://%%track%%/ahtcvximg" />
+  <area shape="rect" coords="9,109,113,125" href="http://%%track%%/ahtcvxtxt" />
+  <area shape="rect" coords="11,137,124,170" href="http://%%track%%/ahtcvxlrn" />
+</map>
+
+<map name="Map5" id="Map5">
+  <area shape="poly" coords="20,19,56,13,91,17,106,9,125,15,133,24,136,39,133,51,127,60,115,65,104,65,103,199,17,201" href="http://%%track%%/asharpfximg" />
+  <area shape="rect" coords="139,120,250,135" href="http://%%track%%/asharpfxtxt" />
+  <area shape="rect" coords="139,149,254,183" href="http://%%track%%/asharpfxlrn" />
+</map>
+</body>
+</html>

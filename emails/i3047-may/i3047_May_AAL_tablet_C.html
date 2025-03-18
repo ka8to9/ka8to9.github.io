@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!--** The viewport meta tag must be present in fluid emails **-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<!-- Below are embedded styles that should be included in every email (everything before the media query) -->
+
+<style type="text/css">
+html {
+	-webkit-text-size-adjust:none;
+	-ms-text-size-adjust:none;
+}
+body {
+	background-color: #ffffff;
+	margin:0px auto;
+	padding: 0;
+}
+
+/* Styles to fix display issues in yahoo and hotmail webmail
+------------------------------------------------------------------------------------------*/
+.blueLinks a {color:#666666; text-decoration: none;}
+.yshortcuts {border-bottom: none;}
+.ReadMsgBody { width: 100%; }
+.ExternalClass{ width: 100%; }
+
+/*--------------------------------
+End of mandatory embedded styles
+---------------------------------*/
+
+
+/* Begin the media query. Only use ID's for fluid divs.
+------------------------------------------------------------------------------------------*/
+@media only screen
+                and (min-width : 100px)
+                and (max-width : 480px) {
+	body {
+	  -webkit-text-size-adjust:100% !important; 
+	  -ms-text-size-adjust:100% !important;
+   	}
+   	
+/* Controls table resizing and hidden elements upon optimization. These are standard classes
+for fluid emails. Use these in every fluid email.
+------------------------------------------------------------------------------------------*/
+*[class].wrap {
+	width:300px !important;
+}
+*[class].hide {
+	display:none !important;
+	width:0 !important;
+}
+*[class].appleLinks a {
+	color:#808080 !important;
+	text-decoration:none !important;
+}
+*[class].head_align {
+	text-align:center !important;
+	padding:10px !important;
+}
+
+/* fluid content part
+------------------------------------------------------------------------------------------*/
+*[id]#fluid_hero {
+	width: 300px !important;
+	height: 323px !important;
+	background-image:url(http://stagingaoa.hackerdev.com/images/i3047-tablet-fluid-hero-300x323.jpg) !important;
+	display:block !important;
+	position:relative !important;
+	background-repeat:no-repeat !important;
+}
+*[class].fluid_hero_link {
+	position: absolute !important; 
+	top: 36px !important; 
+	left: 0px !important; 
+	width: 300px !important; 
+	height: 300px !important;
+	background-color: transparent !important;
+}
+*[class].fluid_hero_link2 {
+	position: absolute !important; 
+	top: 0px !important; 
+	left: 0px !important; 
+	width: 260px !important; 
+	height: 35px !important;
+	background-color: transparent !important;
+}
+*[class].fluid_globe_link {
+	position: absolute !important; 
+	top: 0px !important; 
+	left: 261px !important; 
+	width: 38px !important; 
+	height: 35px !important;
+	background-color: transparent !important;
+}
+
+
+/* Bottom menu item CSS image maps- gray menus
+------------------------------------------------------------------------------------------*/
+*[id]#fluid_menu {
+	width:281px !important;
+	height:194px !important;
+	position: relative !important;
+	background-image:url(images/i3047-fluid-menu-281x194.gif) !important;
+	display:block !important;	
+	background-repeat:no-repeat !important;
+}
+  *[class].fluid_menu_smtPhone {
+	position: absolute !important; 
+	top: 0px !important; 
+	left: 0px !important; 
+	width: 278px !important; 
+	height: 32px !important;
+	background-color: transparent !important; 
+  }
+  *[class].fluid_menu_tablets {
+	position: absolute !important; 
+	top: 40px !important; 
+	left: 0px !important; 
+	width: 278px !important; 
+	height: 32px !important;
+	background-color: transparent !important; 
+  }
+  *[class].fluid_menu_qmp {
+	position: absolute !important; 
+	top: 80px !important; 
+	left: 0px !important; 
+	width: 278px !important; 
+	height: 32px !important;
+	background-color: transparent !important; 
+  }
+  *[class].fluid_menu_BasicPhone {
+	position: absolute !important; 
+	top: 120px !important; 
+	left: 0px !important; 
+	width: 278px !important; 
+	height: 32px !important;
+	background-color: transparent !important; 
+  }
+  *[class].fluid_menu_myatt {
+	position: absolute !important; 
+	top: 160px !important; 
+	left: 0px !important; 
+	width: 278px !important; 
+	height: 32px !important;
+	background-color: transparent !important; 
+  }
+
+
+/* Below is the closing bracket for the media query. Do not delete!
+------------------------------------------------------------------------------------------*/
+}
+
+</style>
+</head>
+
+<body>
+
+<!--this is pre-header section-->
+<table class="wrap" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#ffffff" align="left" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#808080; padding:10px 5px 10px 10px;">
+      <a href="http://%%track%%/cprehead" style="color:#067ab4;" target="_blank">Click here</a> to enjoy big savings on big screens.</td>
+  </tr>
+</table>
+
+<!--this is content-->
+<table class="wrap" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="hide" bgcolor="#ffffff" align="center" valign="top">
+      <a href="http://%%track%%/cwhpimage" target="_blank"><img src="images/i3047-tablet-hero-600x580.jpg" alt="Save $100* when you connect a new tablet! Plus, get FREE overnight shipping and free returns." width="600" height="580" border="0" usemap="#Map" style="display:block;" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#ffffff" align="center" valign="top">
+      <div id="fluid_hero" style="background-image:url(http://stagingaoa.hackerdev.com/images/i3047-tablet-fluid-hero-300x323.jpg); width:0; height:0; display:block;">
+        <a class="fluid_hero_link" href="http://%%track%%/cwhpimage2" target="_blank"></a>
+        <a class="fluid_hero_link2" href="http://%%track%%/cwhpimage2" target="_blank"></a>
+        <a class="fluid_globe_link" href="http://%%track%%/cglobe" target="_blank"></a>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!--this is footer/menu bar-->
+ <table class="wrap" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr><td bgcolor="#ffffff" align="center" valign="middle" colspan="5">&nbsp;</td></tr>
+  <tr class="hide">
+    <td class="hide" bgcolor="#ffffff" align="center" valign="top" width="107"><a href="http://%%track%%/csmartbtn" target="_blank"><img src="images/i3047-menu-smtPhone-107x37.gif" width="107" height="37" border="0" alt="Smartphones" style="display:block;" /></a></td>
+    <td class="hide" bgcolor="#ffffff"  align="center" valign="top" width="107"><a href="http://%%track%%/ctabletbtn" target="_blank"><img src="images/i3047-menu-tablets-107x37.gif" width="107" height="37" border="0" alt="Tablets" style="display:block; " /></a></td>
+    <td class="hide" bgcolor="#ffffff"  align="center" valign="top" width="107"><a href="http://%%track%%/cqmpbtn" target="_blank"><img src="images/i3047-menu-qmp-107x37.gif" width="107" height="37" border="0" alt="Quick Messaging Phone" style="display:block; " /></a></td>
+    <td class="hide" bgcolor="#ffffff"  align="center" valign="top" width="107"><a href="http://%%track%%/cbasicbtn" target="_blank"><img src="images/i3047-menu-bPhone-107x37.gif" width="107" height="37" border="0" alt="Basic Phones" style="display:block;" /></a></td>
+    <td class="hide" bgcolor="#ffffff"  align="center" valign="top" width="107"><a href="http://%%track%%/cmyatt" target="_blank"><img src="images/i3047-menu-myatt-107x37.gif" width="107" height="37" border="0" alt="myAT&T" style="display:block; " /></a></td>
+  </tr>
+  <tr>
+    <td bgcolor="#ffffff"  align="center" valign="middle" colspan="5">
+      <!--This is fluid footer/menue-->
+      <div id="fluid_menu" style="background-image:url(images/i3047-fluid-menu-281x194.gif); width:0; height:0; display:block; padding:15px 0 0 0">
+        <a class="fluid_menu_smtPhone" href="http://%%track%%/csmartbtn"></a>
+        <a class="fluid_menu_tablets" href="http://%%track%%/ctabletbtn"></a>
+        <a class="fluid_menu_qmp" href="http://%%track%%/cqmpbtn"></a>
+        <a class="fluid_menu_BasicPhone" href="http://%%track%%/cbasicbtn"></a>
+        <a class="fluid_menu_myatt" href="http://%%track%%/cmyatt"></a>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<table class="wrap" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#ffffff" align="left" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#808080; padding:10px 10px 0px 10px;">
+      <a href="http://%%track%%/cstoreloc" style="color:#067ab4; text-decoration:none;" target="_blank">store locator</a> | <a href="http://%%track%%/cacssries" style="color:#067ab4; text-decoration:none;" target="_blank">accessories</a> | <a href="http://%%track%%/cringapp" style="color:#067ab4; text-decoration:none;" target="_blank">  apps &amp; ringtones</a>
+    </td>
+  </tr>
+  <tr><td bgcolor="#ffffff" align="left" valign="middle" style="padding:3px 10px;"><img src="images/i3047-border-223x1.gif" width="223" height="1" border="0" alt="border" style="display:block; " /></td></tr>
+  <tr>
+    <td bgcolor="#ffffff" align="left" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#808080; padding-left:10px;">
+      <a href="http://%%track%%/ccontus" style="color:#067ab4; text-decoration:none;" target="_blank">contact us</a> | <a href="http://%%track%%/cprivacy" style="color:#067ab4; text-decoration:none;" target="_blank">privacy policy</a>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#ffffff" align="left" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#808080; padding:10px;">
+      This email was sent to: %%email%% <br />
+      <br />
+      This is an AT&amp;T promotional email.<br />
+      <br />
+      If you do not wish to recieve future email offers from AT&amp;T containing information about products and services we think you will be interested  in, <a href="http://%%track%%/cunsub" style="color:#067ab4;" target="_blank">click here</a> to unsubscribe. <br />
+      <br />
+      <b>Tablet Pricing effective 2/15/2013.</b> Requires a new 2-yr wireless agreement with data (min $14.99/mo.) plan or Mobile Share plan (min $40/mo.). You will receive a $100 bill credit if you activate your own tablet. If you buy a new tablet you will save $100 off of the non-commitment price. <b>Subject to change at any time.</b> 2 tablet purchase limit per account. <b>Free Keyboard Offer:</b> Equipment price &amp; avail may vary by mrkt &amp; may not be available from independent retailers. Subject to Wireless Customer Agrmt. Credit approval req'd. Activ/upgrade fee $36/line. Geographic, usage and other terms, conditions and restrictions apply, and may result in svc termination. Coverage and svcs not avail everywhere. Taxes and other charges apply. <b>Data</b> (<a href="http://%%track%%/cdataplan" style="color:#067ab4;" target="_blank">att.com/dataplans</a>): If usage exceeds your monthly data allowance, you will automatically be charged overage for additional data provided. <b>Early Termination Fee</b> (<a href="http://%%track%%/ceftlegal" style="color:#067ab4;" target="_blank">att.com/equipmentETF</a>): After 14 days, ETF up to $150. <b>Restocking fee:</b> may be up to 10% of the sales price. <b>Other Monthly Charges/Line:</b> may include federal and state universal svc charges, a Regulatory Cost Recovery Charge (up to $1.25), a gross receipts surcharge, an Administrative Fee, and other gov't assessments. These are not taxes or gov't req'd charges. <b>Visit a store or <a href="http://%%track%%/cwlslegal" style="color:#067ab4;" target="_blank">att.com/wireless</a> to learn more about wireless devices and services from AT&amp;T.</b><br />
+      <br />
+      &copy;2013 AT&amp;T Intellectual Property. All rights reserved. AT&amp;T and the AT&amp;T logo are trademarks of AT&amp;T Intellectual Property. All other marks contained herein are the property of their respective owners.<br />
+      <br />
+      <span class="appleLinks">AT&amp;T, 1055 Lenox Park Boulevard, Atlanta, GA 30319</span><br />
+      <br />
+      Reference Code: A176416</td>
+  </tr>
+</table>
+
+
+<map name="Map" id="Map">
+  <area shape="circle" coords="568,30,19" alt="" href="http://%%track%%/cglobe" target="_blank" />
+</map>
+
+
+</body>
+</html>
