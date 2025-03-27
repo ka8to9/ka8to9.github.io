@@ -46,7 +46,7 @@ body {
 	text-transform: normal;
 	letter-spacing: normal;
 	line-height: 1.5em;
-	color:#333;
+	color:#222;
 }
 .drawingpix { 
     position:absolute; 
@@ -151,7 +151,7 @@ h3 {
 	font-family: 'Cabin Sketch', arial, serif;
 	margin-bottom: 0.6em;
 	font-size: 18px;
-	color:#333;
+	color:#222;
 	text-transform: capitalize;
 }
 h4 {
@@ -159,7 +159,7 @@ h4 {
 	line-height: normal;
 	margin-bottom: 5px;
 	font-weight: bold;
-	border-bottom: 1px dotted #333;
+	border-bottom: 1px dotted #222;
 	font-weight: bold;
 }
 h5 {
@@ -177,7 +177,7 @@ h6 {
 #container p {
 	font-size:10px;
 	line-height: normal;
-	color:#333;
+	color:#222;
 	/*margin-left: 7px;*/
 	margin-bottom: 5px;
 	font-style: italic;
