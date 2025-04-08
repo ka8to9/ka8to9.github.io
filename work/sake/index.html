@@ -48,7 +48,11 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				
-				if (navigator.userAgent.indexOf("Modernizr")!=-1){
+				//if (navigator.userAgent.indexOf("Modernizr")!=-1){
+				//	$('#motiongraphic').empty().append('<img class="home_video" src="videos/sake.png" width="660" height="454" />');
+				//}
+				if (navigator.mozApps) {
+					// Specific Firefox feature is supported
 					$('#motiongraphic').empty().append('<img class="home_video" src="videos/sake.png" width="660" height="454" />');
 				}
 				
