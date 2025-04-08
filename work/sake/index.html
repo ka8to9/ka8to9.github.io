@@ -48,38 +48,33 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				
-				if (navigator.userAgent.indexOf("Firefox")!=-1){
-					$('#motiongraphic').empty().append('<img class="home_video" src="videos/sake.png" width="660" height=:"454" />');
+				if (navigator.userAgent.indexOf("Modernizr")!=-1){
+					$('#motiongraphic').empty().append('<img class="home_video" src="videos/sake.png" width="660" height="454" />');
 				}
 				
 				$('#main div').eq(0).show();
 				
 				$('#nav a').click(function(){
-					
 					if($('video').length > 0) $('video')[0].pause();
-					
 					var thisLink = $(this).attr('class');
 					
-					$('.main_content').each(function(){
-						$(this).css('display','none');
-					});
+					// Hide all .main_content elements at once
+					$('.main_content').hide();
 					
-					$('#nav li').each(function(){
-						$(this).removeClass('active');
-					});
-					
+					// Show the specific .main_content element related to the clicked link
 					$('#' + thisLink + '_content').show();
+					
+					// Remove the 'active' class from all items and add it to the clicked one
+					$('#nav li').removeClass('active');
 					$(this).parent().addClass('active');
 					
+					// Handle nested <li> active class
 					if($(this).parent().parent().parent()[0].tagName == "LI"){
 						$(this).parent().parent().parent().addClass('active');
 					}
-					
-					$(document).scrollTop(0); 
-										
 				});
 				
-				if(window.location.hash != '#'){
+				if (window.location.hash && window.location.hash != '#') {
 					$('a[href="'+window.location.hash+'"]').trigger('click');
 				}
 			});
