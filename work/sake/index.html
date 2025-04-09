@@ -6,10 +6,9 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Handlee&display=swap" rel="stylesheet">
 
-		
 		<title>Japan Sake Prestige</title>
 		
-		<script type="text/javascript" src="js/swfobject.js"></script>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		
 <!-- 		<script type="text/javascript" src="js/background_water_rings.js"></script> -->
@@ -22,38 +21,23 @@
 		<link rel="stylesheet" type="text/css"href="css/reset.css" />
 		<link rel="stylesheet" type="text/css"href="css/style.css" />
 		<link rel="stylesheet" type="text/css"href="css/products_filter.css" />		
-	
-		<!-- this part is for homepage video -->
-		
-		<script type="text/javascript">
-		var flashvars = {};
-		var params = {movie: "../videos/sake.flv", autoplay: "true", muted: 'true'};
-			swfobject.embedSWF("videos/sake.swf", "warning","660", "454", "", flashvars, params);
-		
-		
-
-			var mutebutton = document.getElementById('mutebutton');
-			$('video').bind('onvolumechange', function(evt) {
-				mutebutton.value = $('video')[0].muted ? 'Muted' : 'Unmuted';
-			});
-			function muteOrUnmute() {
-				$('video')[0].muted = true;
-			}
-
-		</script>
 		
 		
 		<!-- this part is for navigation bar -->
 		<script type="text/javascript">
 			$(document).ready(function(){
 				
-				//if (navigator.userAgent.indexOf("Modernizr")!=-1){
-				//	$('#motiongraphic').empty().append('<img class="home_video" src="videos/sake.png" width="660" height="454" />');
-				//}
+//				if (navigator.userAgent.indexOf("Modernizr")!=-1){
+//					$('#motiongraphic').empty().append('<img class="home_video" src="videos/sake.png" width="660" height="454" />');
+//				}
 				if (navigator.mozApps) {
 					// Specific Firefox feature is supported
 					$('#motiongraphic').empty().append('<img class="home_video" src="videos/sake.png" width="660" height="454" />');
+//				} else {
+//					// Non-Firefox behavior or fallback
+//					$('#motiongraphic').empty().append('<video class="home_video" src="videos/sake.mp4" width="660" height="454" autoplay></video>');
 				}
+				
 				
 				$('#main div').eq(0).show();
 				
